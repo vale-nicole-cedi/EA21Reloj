@@ -22,11 +22,26 @@
     margin: 0;
 }
 
+h1 {
+    font-family: 'SevenSegment', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #333;
+	
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #555;
+}
 
 
     </style>
 </head>
 <body>
-
+ <h1>HORA</h1> <br>
+<h2>buen dia</h2>
 </body>
 </html>
