@@ -80,8 +80,3 @@ function a() {
 </script>
 </body>
 </html>
-
- <h1>HORA</h1> <br>
-<h2>buen dia</h2>
-</body>
-</html>
