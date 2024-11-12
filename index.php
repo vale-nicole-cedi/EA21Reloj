@@ -30,7 +30,7 @@
     
 }
 
- {
+ #saludo {
     font-family: Arial, sans-serif;
     font-size: 2rem;
     font-weight: bold;
