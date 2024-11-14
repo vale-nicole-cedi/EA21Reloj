@@ -27,11 +27,17 @@
         color: #333;
     }
 
-    #saludo , #nav {
+    #saludo   {
         font-family: Arial, sans-serif;
         font-size: 2rem;
         font-weight: bold;
         color: #555;
+    }
+    #nav{
+       font-family: Arial, sans-serif;
+        font-size: 4rem;
+        font-weight: bold;
+        color: #555; 
     }
 
 </style>
