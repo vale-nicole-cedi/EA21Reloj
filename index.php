@@ -45,34 +45,43 @@ function a() {
         url: 'reloj.php?' + new Date().getTime(),
         method: 'GET',
         success: function(data) {
+            // Asegúrate de que la respuesta no tenga espacios ni caracteres inesperados
             let n = data.trim();
             $('#hora').text(n);
 
-            let hora = parseInt(n.slice(0, 2)); 
+            // Extrae la hora como un número entero
+            let horaStr = n.split(':')[0];
+            let hora = parseInt(horaStr, 10); 
+
+            // Validar si la hora es un número válido
+            if (isNaN(hora)) return;
+
             let mensaje;
             let bgColor;
 
-            
+            // Cambia el saludo y el color de fondo según la hora
             if (hora >= 19 || hora < 5) {
                 mensaje = "Buenas noches";
-                bgColor = "#001f3f"; 
+                bgColor = "#001f3f"; // Fondo oscuro para la noche
             } else if (hora >= 5 && hora < 12) {
                 mensaje = "Buenos días";
-                bgColor = "#87CEEB"; 
+                bgColor = "#87CEEB"; // Cielo claro para la mañana
             } else if (hora >= 12 && hora < 19) {
                 mensaje = "Buenas tardes";
-                bgColor = "#FFD580"; 
+                bgColor = "#FFD580"; // Color cálido para la tarde
             } else {
                 mensaje = "Hola";
-                bgColor = "#FFFFFF"; 
+                bgColor = "#FFFFFF"; // Fondo por defecto
             }
 
             $('#saludo').text(mensaje);
-            $('body').css('background-color', bgColor); 
+            $('body').css('background-color', bgColor);
+        },
+        error: function() {
+            console.error("Error al obtener la hora del servidor.");
         }
     });
 }
-
 
 setInterval(a, 1000);
 </script>
