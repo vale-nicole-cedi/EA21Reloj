@@ -22,20 +22,20 @@
 
     #hora {
         font-family: 'SevenSegment', sans-serif;
-        font-size: 5rem;
+        font-size: 7rem;
         font-weight: bold;
         color: #333;
     }
 
     #saludo   {
         font-family: Arial, sans-serif;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: bold;
         color: #555;
     }
     #nav{
        font-family: Arial, sans-serif;
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: bold;
         color: #555; 
     }
